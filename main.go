@@ -12,7 +12,7 @@ var (
 	user     = flag.String("user", "", "The database user name")
 	password = flag.String("password", "", "The database password")
 	db       = flag.String("database", "", "The database to connect to")
-	query    = flag.String("query", "", "The test query")
+	query    = flag.String("query", "SELECT name FROM user", "The test query")
 	addr     = flag.String("address", "localhost:8080", "The address to listen on")
 )
 

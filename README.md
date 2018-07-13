@@ -19,6 +19,13 @@
 ### Run app:
 
 ```
-> sudo docker run --rm -it -d -p 8080:8080 --net=host mysql-checker
+> sudo docker run --rm -it -d -p 8080:8080 -e DB_USER=root -e DB_NAME=demo --net=host mysql-checker
 
+```
+
+### API endpoint
+
+```
+> curl localhost:8080/health
+{"status": "OK"}
 ```
